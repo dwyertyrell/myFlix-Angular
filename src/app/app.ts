@@ -1,7 +1,5 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {bootstrapApplication} from '@angular/platform-browser'
-import {provideHttpClient} from '@angular/common/http'
 
 
 
@@ -16,9 +14,3 @@ import {provideHttpClient} from '@angular/common/http'
 export class App {
   protected readonly title = signal('myFlix-Angular-client');
 }
-
-bootstrapApplication(App, {
-  providers: [
-    provideHttpClient()
-  ]
-})
