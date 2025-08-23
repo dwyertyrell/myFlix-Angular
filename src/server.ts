@@ -17,6 +17,7 @@ const angularApp = new AngularNodeAppEngine();
  * Uncomment and define endpoints as necessary.
  *
  * Example:
+
  * ```ts
  * app.get('/api/{*splat}', (req, res) => {
  *   // Handle API request
@@ -38,6 +39,14 @@ app.use(
 /**
  * Handle all other requests by rendering the Angular application.
  */
+
+// Basic user registration endpoint
+app.post('/users', express.json(), (req, res) => {
+  // TODO: Implement user registration logic
+  console.log('User registration data:', req.body);
+  res.status(201).json({ message: 'User registration received', data: req.body });
+});
+
 app.use((req, res, next) => {
   angularApp
     .handle(req)
