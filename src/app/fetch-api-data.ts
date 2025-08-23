@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
 // i changed FetchApiData to UserRegistrationService
-const apiUrl = 'https://secret-eyrie-53650-99dc45662f12.herokuapp.com'
+const apiUrl = 'https://secret-eyrie-53650-99dc45662f12.herokuapp.com/'
 @Injectable({
   providedIn: 'root'
 })
