@@ -36,17 +36,27 @@ app.use(
   }),
 );
 
-/**
- * Handle all other requests by rendering the Angular application.
- */
 
 // Basic user registration endpoint
 app.post('/users', express.json(), (req, res) => {
-  // TODO: Implement user registration logic
-  console.log('User registration data:', req.body);
-  res.status(201).json({ message: 'User registration received', data: req.body });
+  console.log('--- /users route reached ---');
+  try {
+    console.log('User registration data:', req.body);
+    // Simulate registration logic
+    if (!req.body || !req.body.Username || !req.body.Password || !req.body.Email || !req.body.Birthday) {
+      console.error('Missing required fields:', req.body);
+      return res.status(400).json({ error: 'Missing required fields' });
+    }
+    return res.status(201).json({ message: 'User registration received', data: req.body });
+  } catch (err) {
+    console.error('Error in /users route:', err);
+    return res.status(500).json({ error: 'Internal Server Error', details: (err as Error).message });
+  }
 });
 
+/**
+ * Handle all other requests by rendering the Angular application.
+ */
 app.use((req, res, next) => {
   angularApp
     .handle(req)
@@ -55,7 +65,6 @@ app.use((req, res, next) => {
     )
     .catch(next);
 });
-
 /**
  * Start the server if this module is the main entry point.
  * The server listens on the port defined by the `PORT` environment variable, or defaults to 4000.
