@@ -34,7 +34,15 @@ import { FormsModule } from '@angular/forms';
 })
 export class UserRegistrationFormComponent implements OnInit {
 
-  @Input() userData = { Username: '', Password: '', Email: '', Birthday: '' };
+  @Input() userData = {
+    firstName: '',
+    lastName: '',
+    age: null,
+    username: '',
+    password: '',
+    email: '',
+    birthday: ''
+  };
 
 constructor(
     public fetchApiData: UserRegistrationService,
