@@ -16,7 +16,7 @@ import {
 } from '@angular/forms';
 import { UserRegistrationFormComponent } from './user-registration-form/user-registration-form';
 import { UserLoginForm } from './user-login-form/user-login-form';
-
+import { MovieCardComponent } from './movie-card/movie-card';
 @Component({
   selector: 'app-root',
   imports: [
@@ -51,13 +51,10 @@ openUserLoginDialog(): void {
     });
   }
 
+openMovieCardDialog():  void {
+  this.dialog.open(MovieCardComponent, {
+    width: '280px'
+  })
+}
 }
 
-
-/*  template: `
-  <h2>hellloooo</h2>
-<p>hi</p>
-
-<input [formControl]="nameControl">
-<p>name:{{nameControl.value}}</p>
-  `, */

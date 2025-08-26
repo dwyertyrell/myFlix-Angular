@@ -1,0 +1,9 @@
+.movie-list-container {
+   max-height: 800px; // or any suitable value
+  overflow-y: auto;
+}
+
+.movie-image {
+  max-height: 150px;
+  max-width: 150px
+}
