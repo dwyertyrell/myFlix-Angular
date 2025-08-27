@@ -35,7 +35,7 @@ export class UserLoginForm {
     this.fetchApiData.userLogin(this.userData).subscribe({
       next: (result) => {
         // Save token to localStorage
-        if (result.token) {
+        if (result.token && typeof window !== 'undefined' && window.localStorage) {
           localStorage.setItem('token', result.token);
           localStorage.setItem('user', this.userData.username);
           console.log(`the user's token: ${result.token}`)
