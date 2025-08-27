@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-beasties-container><head>
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta charset="utf-8">
   <title>MyFlixAngularClient</title>
   <base href="/">
@@ -9,4 +9,4 @@
   <app-root ng-version="20.1.7" ngh="1" ng-server-context="ssg"><router-outlet></router-outlet><app-movie-card _nghost-ng-c2091323657 ngh="0"><div _ngcontent-ng-c2091323657 class="movie-list-container"><!----></div></app-movie-card><!----></app-root>
 <script src="main-AB7X5OQ4.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"1":"t0"},"c":{"1":[]}},{"c":{"0":[{"i":"c2091323657","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"1":"t0"},"c":{"1":[]}},{"c":{"0":[{"i":"c2091323657","r":1}]}}]}</script></body></html>`;

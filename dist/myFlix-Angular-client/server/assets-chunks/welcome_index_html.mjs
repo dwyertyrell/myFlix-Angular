@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-beasties-container><head>
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta charset="utf-8">
   <title>MyFlixAngularClient</title>
   <base href="/">
@@ -13,4 +13,4 @@
   <app-root ng-version="20.1.7" ngh="2" ng-server-context="ssg"><router-outlet></router-outlet><app-welcome-page ngh="1"><div class="main-page"><h1> Welcome to myFlix! </h1><button mat-raised-button color="primary" class="mdc-button mat-mdc-button-base mdc-button--raised mat-mdc-raised-button mat-primary" style="margin-right: 10px;" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label"> Sign Up </span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button mat-raised-button color="primary" class="mdc-button mat-mdc-button-base mdc-button--raised mat-mdc-raised-button mat-primary" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label"> Login </span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div></app-welcome-page><!----></app-root>
 <script src="main-AB7X5OQ4.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"n":{"2":"hfn","5":"hfn2"}},{"n":{"4":"3fnf","6":"5fnf"}},{"c":{"0":[{"i":"c1994554916","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{"n":{"2":"hfn","5":"hfn2"}},{"n":{"4":"3fnf","6":"5fnf"}},{"c":{"0":[{"i":"c1994554916","r":1}]}}]}</script></body></html>`;
